@@ -5,6 +5,13 @@
     /* border: solid; */
 }
 
+/* styles.module.css */
+
+.text_black {
+    color: #000000; /* Black color */
+}
+
+
 .HomePage_about {
     display: block;
 }

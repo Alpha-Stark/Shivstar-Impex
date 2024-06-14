@@ -4,7 +4,6 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { Box, Flex, Grid, Heading, Image, Button, ButtonGroup, Text, Spinner, Center, useDisclosure, useToast } from "@chakra-ui/react";
 import { useDispatch, useSelector } from "react-redux";
-import { ADD_CART } from "../Store/actiontype";
 
 function AllProducts() {
     const [data, setData] = useState([]);
@@ -114,7 +113,7 @@ function AllProducts() {
                                 <Button variant="link" color={"black"} fontSize={"15px"}>
                                     More Detail
                                 </Button>
-                                <Button
+                                {/* <Button
                                     color="white"
                                     bg="black"
                                     w={"60px"}
@@ -146,7 +145,7 @@ function AllProducts() {
                                     }}
                                 >
                                     ADD
-                                </Button>
+                                </Button> */}
                             </Flex>
                         </Flex>
                     </Box>

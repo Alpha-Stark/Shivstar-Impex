@@ -9,7 +9,7 @@ import Link from "next/link";
 function Navbar() {
     return (
         <>
-            <div className={`${styles.navbaronly} flex flex-col md:flex-row items-center justify-between p-4 h-[10vh] w-full z-10`}>
+            <div className={`${styles.navbaronly}`}>
                 <div className="flex items-center justify-between w-full md:w-auto mb-2 md:mb-0">
                     <Link href="/" className="flex items-center p-1">
                         <Image src={logo} alt="Logo" width={85} height={55} />
@@ -17,13 +17,13 @@ function Navbar() {
                     </Link>
                 </div>
                 <div className="flex flex-col md:flex-row md:ml-4 w-full md:w-auto justify-center md:justify-end">
-                    <Link href="/contactUs" className="my-1 md:my-0 mx-2 md:mx-4 p-1 text-white text-sm md:text-lg">
+                    <Link href="/diamonds" className="my-1 md:my-0 mx-2 md:mx-4 p-1 text-white text-sm md:text-lg">
                         Diamonds
                     </Link>
-                    <Link href="/account" className="my-1 md:my-0 mx-2 md:mx-4 p-1 text-white text-sm md:text-lg">
+                    <Link href="/watches" className="my-1 md:my-0 mx-2 md:mx-4 p-1 text-white text-sm md:text-lg">
                         Watches
                     </Link>
-                    <Link href="/bag" className="my-1 md:my-0 mx-2 md:mx-4 p-1 text-white text-sm md:text-lg">
+                    <Link href="/gift" className="my-1 md:my-0 mx-2 md:mx-4 p-1 text-white text-sm md:text-lg">
                         Gift
                     </Link>
                     <Link href="/contactUs" className="my-1 md:my-0 mx-2 md:mx-4 p-1 text-white text-sm md:text-lg">

@@ -11,14 +11,12 @@ function Navbar() {
         <>
             <div className={`${styles.navbaronly} flex flex-col md:flex-row items-center justify-between p-4 h-[10vh] w-full z-10`}>
                 <div className="flex items-center justify-between w-full md:w-auto mb-2 md:mb-0">
-                    {/* Toggle button example */}
-                    {/* <IconButton display={{ base: "flex", md: "none" }} onClick={isOpen ? onClose : onOpen} icon={isOpen ? <CloseIcon /> : <HamburgerIcon />} variant="ghost" color="white" aria-label="Toggle Navigation" /> */}
-                    <Link href="/" /* as={NavLink} */ className="flex items-center p-1">
+                    <Link href="/" className="flex items-center p-1">
                         <Image src={logo} alt="Logo" width={85} height={55} />
                         <h4 className="text-white text-lg md:text-2xl ml-2 md:ml-4">SHIVSTAR IMPEX</h4>
                     </Link>
                 </div>
-                <div className="flex flex-col md:flex-row md:ml-4">
+                <div className="flex flex-col md:flex-row md:ml-4 w-full md:w-auto justify-center md:justify-end">
                     <Link href="/contactUs" className="my-1 md:my-0 mx-2 md:mx-4 p-1 text-white text-sm md:text-lg">
                         Diamonds
                     </Link>
@@ -38,16 +36,18 @@ function Navbar() {
                         Bag
                     </Link>
                 </div>
-                <SignedOut>
-                    <SignInButton>
-                        <button type="button" className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-black dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
-                            Sign-In
-                        </button>
-                    </SignInButton>
-                </SignedOut>
-                <SignedIn>
-                    <UserButton />
-                </SignedIn>
+                <div className="flex items-center">
+                    <SignedOut>
+                        <SignInButton>
+                            <button type="button" className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-black dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
+                                Sign-In
+                            </button>
+                        </SignInButton>
+                    </SignedOut>
+                    <SignedIn>
+                        <UserButton />
+                    </SignedIn>
+                </div>
             </div>
         </>
     );

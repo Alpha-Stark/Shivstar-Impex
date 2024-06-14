@@ -3,9 +3,11 @@ import { headers } from "next/headers";
 import { WebhookEvent } from "@clerk/nextjs/server";
 import { clerkClient } from "@clerk/nextjs";
 import { NextResponse } from "next/server";
+import { connectToDatabase } from "@/lib/database";
 
 export async function POST(req) {
     // You can find this in the Clerk Dashboard -> Webhooks -> choose the endpoint
+    connectToDatabase();
     const WEBHOOK_SECRET = process.env.WEBHOOK_SECRET;
 
     if (!WEBHOOK_SECRET) {

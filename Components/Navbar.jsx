@@ -38,9 +38,7 @@ function Navbar() {
             <div className="flex items-center">
                 <SignedOut>
                     <SignInButton>
-                        <button className={`${styles.button} ${styles.dark}`}>
-                            <Link href="/sign-in">Login</Link>
-                        </button>
+                        <button className={`${styles.button} ${styles.dark}`}>Login</button>
                     </SignInButton>
                 </SignedOut>
                 <SignedIn>

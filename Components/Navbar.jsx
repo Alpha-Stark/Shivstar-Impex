@@ -17,22 +17,22 @@ function Navbar() {
                     </Link>
                 </div>
                 <div className="flex flex-col md:flex-row md:ml-4 w-full md:w-auto justify-center md:justify-end">
-                    <Link href="/diamonds" className="my-1 md:my-0 mx-2 md:mx-4 p-1 text-white text-sm md:text-lg">
+                    <Link href="/diamonds" className={`${styles["navbar-link"]} my-1 md:my-0 mx-2 md:mx-4 p-1`}>
                         Diamonds
                     </Link>
-                    <Link href="/watches" className="my-1 md:my-0 mx-2 md:mx-4 p-1 text-white text-sm md:text-lg">
+                    <Link href="/watches" className={`${styles["navbar-link"]} my-1 md:my-0 mx-2 md:mx-4 p-1`}>
                         Watches
                     </Link>
-                    <Link href="/gift" className="my-1 md:my-0 mx-2 md:mx-4 p-1 text-white text-sm md:text-lg">
+                    <Link href="/gift" className={`${styles["navbar-link"]} my-1 md:my-0 mx-2 md:mx-4 p-1`}>
                         Gift
                     </Link>
-                    <Link href="/contactUs" className="my-1 md:my-0 mx-2 md:mx-4 p-1 text-white text-sm md:text-lg">
+                    <Link href="/contactUs" className={`${styles["navbar-link"]} my-1 md:my-0 mx-2 md:mx-4 p-1`}>
                         Contact
                     </Link>
-                    <Link href="/account" className="my-1 md:my-0 mx-2 md:mx-4 p-1 text-white text-sm md:text-lg">
+                    <Link href="/account" className={`${styles["navbar-link"]} my-1 md:my-0 mx-2 md:mx-4 p-1`}>
                         Account
                     </Link>
-                    <Link href="/bag" className="my-1 md:my-0 mx-2 md:mx-4 p-1 text-white text-sm md:text-lg">
+                    <Link href="/bag" className={`${styles["navbar-link"]} my-1 md:my-0 mx-2 md:mx-4 p-1`}>
                         Bag
                     </Link>
                 </div>

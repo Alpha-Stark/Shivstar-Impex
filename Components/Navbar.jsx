@@ -5,6 +5,7 @@ import styles from "../style/navbar.module.css";
 import logo from "../ShivstarLogo.png";
 import Image from "next/image";
 import Link from "next/link";
+import "../app/globals.css";
 
 function Navbar() {
     return (

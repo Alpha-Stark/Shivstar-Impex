@@ -1,33 +1,4 @@
-/* .navbaronly {
-    background: rgb(20, 20, 20);
-    background: linear-gradient(90deg, rgba(20, 20, 20, 1) 0%, rgb(26, 26, 26) 52%, rgb(30, 30, 30) 63%, rgb(33, 33, 33) 72%, rgba(31, 31, 31, 1) 86%);
-    color: white;
-    position: fixed;
-    width: 100%;
-}
- */
 /* 
- .navbaronly {
-    background: rgb(20, 20, 20);
-    background: linear-gradient(90deg, rgba(20, 20, 20, 1) 0%, rgb(26, 26, 26) 52%, rgb(30, 30, 30) 63%, rgb(33, 33, 33) 72%, rgba(31, 31, 31, 1) 86%);
-    color: white;
-    position: fixed;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-    height: 10vh;
-    z-index: 10;
-}
-
-@media (min-width: 768px) {
-    .navbaronly {
-        flex-direction: row;
-    }
-}
- */
  .navbaronly {
     background: linear-gradient(90deg, rgba(20, 20, 20, 1) 0%, rgb(26, 26, 26) 52%, rgb(30, 30, 30) 63%, rgb(33, 33, 33) 72%, rgba(31, 31, 31, 1) 86%);
     color: white;
@@ -60,5 +31,56 @@
     .navbar-link {
         font-size: 1.25rem;
         margin: 0 1rem;
+    }
+}
+ */
+
+ .navbaronly {
+    background: linear-gradient(90deg, rgba(20, 20, 20, 1) 0%, rgb(26, 26, 26) 52%, rgb(30, 30, 30) 63%, rgb(33, 33, 33) 72%, rgba(31, 31, 31, 1) 86%);
+    color: white;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    height: 10vh;
+    z-index: 10;
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0.5rem;
+}
+
+.navbar-link:hover {
+    text-decoration: underline;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo h4 {
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+    font-family: Arial, sans-serif;
+}
+
+@media (min-width: 768px) {
+    .navbaronly {
+        flex-direction: row;
+    }
+    .navbar-link {
+        font-size: 1.25rem;
+        margin: 0 1rem;
+    }
+    .navbar-logo h4 {
+        font-size: 2rem;
+        margin-left: 1rem;
     }
 }

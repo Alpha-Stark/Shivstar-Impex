@@ -24,6 +24,7 @@
     "framer-motion": "^10.18.0",
     "mongoose": "^8.4.1",
     "next": "14.2.4",
+    "query-string": "^9.0.0",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.2",
     "react-custom-alert": "^1.0.4",
@@ -39,6 +40,8 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^3.1.0",
     "styled-components": "^6.1.11",
+    "svix": "^1.24.0",
+    "tailwind-merge": "^2.3.0",
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {

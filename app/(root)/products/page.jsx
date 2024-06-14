@@ -94,7 +94,7 @@ function AllProducts() {
                     //   </ButtonGroup>
                     // </Box>
                     <Box boxShadow="rgba(149, 157, 165, 0.2) 0px 8px 24px" display={"flex"} p={"10px"} flexDir={"column"} _hover={{ transform: "scale(1.02)", transition: "transform 0.4s" }} h={"320px"} key={i}>
-                        <Image src={ele.avatar} w="200px" m={"auto"} />
+                        <Image src={ele.avatar} w="200px" m={"auto"} alt="Item" />
                         <Flex justifyContent={"space-around"} alignItems={"center"}>
                             <Flex direction="column" gap="2%">
                                 <Heading as="h6" size={"sm"} textAlign="left">

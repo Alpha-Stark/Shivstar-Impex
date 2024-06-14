@@ -14,12 +14,8 @@ function AllProducts() {
     const toast = useToast();
     const { isAuth } = useSelector((st) => st);
 
-    useEffect(() => {
-        fetchrender(page, query);
-    }, [page, query]);
-
     // fetch data function to fetch data from the mongodb database
-    const fetchrender = async () => {
+    /* const fetchrender = async () => {
         setLoading(true);
         try {
             let res = await fetch(`https://traveller-jt36.onrender.com/jewellery?_page=${page}&_limit=12${(query && "&category=" + query) || "Rings"}`);
@@ -31,6 +27,9 @@ function AllProducts() {
             setErr(true);
         }
     };
+    useEffect(() => {
+        fetchrender(page, query);
+    }, [page, query]); */
 
     if (Loading) {
         return (

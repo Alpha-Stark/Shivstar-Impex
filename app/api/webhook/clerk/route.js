@@ -4,6 +4,7 @@ import { WebhookEvent } from "@clerk/nextjs/server";
 import { clerkClient } from "@clerk/nextjs";
 import { NextResponse } from "next/server";
 import { connectToDatabase } from "@/lib/database";
+import { createUser, deleteUser, updateUser } from "@/lib/actions/user.action";
 
 export async function POST(req) {
     // You can find this in the Clerk Dashboard -> Webhooks -> choose the endpoint
@@ -64,6 +65,7 @@ export async function POST(req) {
             firstName: first_name,
             lastName: last_name,
             photo: image_url,
+            type: "user",
         };
         const newUser = await createUser(user);
         if (newUser) {

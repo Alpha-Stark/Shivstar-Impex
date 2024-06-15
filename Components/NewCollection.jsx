@@ -1,11 +1,4 @@
-import { Box, Button, Flex, Grid, Heading, Image, Text, transition } from "@chakra-ui/react";
 import React from "react";
-import img1 from "../Pics/messika-cr_oles-move-uno-diamant-or-blanc.jpg";
-import img2 from "../Pics/messika-collier-move-uno-gm-diamant-or-blanc-bis.jpg";
-import img3 from "../Pics/messika-bracelet-diamant-or-blanc-so-move-xl-pave-12942.jpg";
-import img4 from "../Pics/bague-diamant-blanc-titane-graphite-move-titanium-pm-07164_1.jpg";
-// import { useNavigate } from "react-router-dom";
-/* import { useRouter } from "next/router"; */
 import styles from "../style/Newcollection.module.css";
 
 export const NewCollection = () => {
